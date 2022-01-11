@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(49, 56, 56);
+  font-size: 3em;
+}
+
+.flex-container {
+  border: slateblue 3px solid;
+  height: 35em;
+  display: flex;
+  /* Flexbox-justify-contents */
+
+  /* justify-content: baseline;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: space-around;
+  justify-content: center;
+  justify-content: space-between; */
+  justify-content: flex-start;
+
+  /* Felxbox-align-items */
+
+  /* align-items: stretch;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+  */
+
+  /* Flexbox direction items */
+
+  /* flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: column;
+  flex-direction: row;
+  */
+
+  /* Flexbox-wrapping  items */
+
+  /* flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
+  */
+  flex-wrap: wrap;
+
+  /* Flex-direction and wrapping shorthand */
+
+  /* flex-flow: column wrap;
+  flex-flow: column-reverse wrap;
+  flex-flow: row-reverse wrap;
+  flex-flow: row wrap; */
+}
+
+.fbox {
+  width: 18em;
+  height: 12em;
+  margin: 5px;
+  border: 2px solid salmon;
+}
+
+.fbox:nth-of-type(2n) {
+  background-color: rgb(131, 121, 199);
+}
+.fbox:nth-of-type(2n-1) {
+  background-color: rgb(241, 182, 129);
+}
+#item-1 {
+  /* flex-grow: 3; */
+  /* flex-shrink: 4; */
+
+  /* Flex-basis mainly jokhon directon ROW borabor thakbe then WIDTh niye kaaj krbe */
+
+  /* Flex-basis mainly jokhon directon COLUMN borabor thakbe then HEIGHT niye kaaj krbe */
+
+  /* flex-basis: 360px; */
+}
+#item-2 {
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+
+  /* Flexbox er tinta item eksathe likha jaay ta holo Flex-grow |Flex -shirnk| Flex basis call korte hoy : flex likhe*/
+
+  /* flex: 2 3 400px; */
+
+  /* shrink dekhte chaile wrap off kore niye inspect e giye dekhte hbe */
+}
+#item-3 {
+  /* flex-grow: 1; */
+
+  /* We might have to move a item individually,then we have use the align-self property */
+
+  /* align-self: flex-end; */
+}
+#item-4 {
+  /* flex-grow: 2; */
+  /* flex-shrink: 3; */
+
+  /* align-self: center; */
+}
+#item-5 {
+  /* flex-grow: 1; */
+}
+#item-6 {
+  /* flex-grow: 3;  */
+  /* flex-shrink: 2; */
+}
+#item-7 {
+  /* flex-grow: 1; */
+}
+#item-8 {
+  /* flex-grow: 3; */
+  /* flex-shrink: 1; */
+}
